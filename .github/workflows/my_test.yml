@@ -1,8 +1,8 @@
 name: Test_Workflow
 on: workflow_dispatch
 jobs:
-    print:
-        runs-on: ubuntu-latest
-        steps:
-          - name Print to console
-          run: echo Hello!
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print to console        # <-- colon after "name"
+        run: echo Hello!              # <-- indented under the step
